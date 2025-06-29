@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import profileImage from "../../assets/headerimage.jpg";
 
 const Home: React.FC = () => (
   <section id="home" className="home">
@@ -15,6 +16,9 @@ const Home: React.FC = () => (
       {/* <a href="#projects" className="projects-button">
         Previous Projects
       </a> */}
+    </div>
+    <div className="home-image">
+      <img src={profileImage} alt="My profile" />
     </div>
   </section>
 );
