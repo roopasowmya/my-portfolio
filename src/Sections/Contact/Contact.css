@@ -1,0 +1,131 @@
+.contact-section {
+  /* background: linear-gradient(to right, #3f2fa3, #5d3ce2); */
+  background: #10162f;
+  color: white;
+  padding: 4rem 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-left h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.icon {
+  background: linear-gradient(to right, #42c6ff, #704fff);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+  background: #0e1224;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: transparent;
+  border: 2px solid #5d3ce2;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  background: #0e1224;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  background: linear-gradient(to right, #42c6ff, #704fff);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  opacity: 0.85;
+}
+
+.contact-footer {
+  margin-top: 3rem;
+  border-top: 1px solid #ffffff55;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  background: linear-gradient(to right, #42c6ff, #704fff);
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  color: white;
+  display: inline-block;
+}

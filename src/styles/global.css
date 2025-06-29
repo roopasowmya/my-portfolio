@@ -1,0 +1,82 @@
+/* General Reset and Defaults */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* min-height: 100vh; */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #10162f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  padding: 100px 1rem 60px;
+}
+
+/* #home {
+  background-color: #10162f;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+#about {
+  background-color: #10162f;
+  color: #ffffff;
+}
+
+#projects {
+  background-color: #10162f;
+  color: #ffffff;
+}
+
+#experience {
+  background-color: #10162f;
+  color: #ffffff;
+}
+
+#contact {
+  background: linear-gradient(135deg, #3f2fa3, #10162f);
+  color: #ffffff;
+}
+
+h1,
+h2 {
+  font-family: cursive;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}

@@ -1,0 +1,62 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 3rem;
+  background-color: #10162f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  z-index: 100;
+}
+
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background: #3f2fa3;
+  width: 0;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  width: 100%;
+}
+
+.navbar a.active {
+  color: #3f2fa3;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  padding: 0;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(90deg, #3f2fa3, #5d3ce2);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.contact-button:hover {
+  background: linear-gradient(90deg, #5d3ce2, #3f2fa3);
+}

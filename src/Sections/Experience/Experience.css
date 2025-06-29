@@ -1,0 +1,119 @@
+.experience-section {
+  color: #fff;
+  padding: 5rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.experience-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  background: #3f2fa3;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.timeline-item.left .timeline-content {
+  order: 1;
+  text-align: right;
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.timeline-item.right .timeline-content {
+  order: 3;
+  text-align: left;
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.timeline-circle {
+  order: 2;
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #41d3ff, #6e33ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.timeline-subtitle {
+  font-size: 0.95rem;
+  color: #bbb;
+  white-space: pre-line;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    padding: 0;
+  }
+
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-item.left .timeline-content,
+  .timeline-item.right .timeline-content {
+    order: 2;
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  .timeline-circle {
+    order: 1;
+    margin-bottom: 1rem;
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,57 @@
+.home {
+  background-color: #10162f;
+  display: flex;
+  padding-left: 19rem;
+  padding-top: 15rem;
+  /* background-image: url("../../assets/glowing-coding-icon-digital-binary-background-3d-rendering_670147-114773.avif");
+  background-size: cover; */
+}
+
+.home-content {
+  max-width: 600px;
+  align-self: flex-start;
+}
+
+.home-intro {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #808592;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.blue-dot {
+  color: #3f2fa3;
+}
+
+.projects-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  color: #ffffff;
+
+  width: 200px;
+  height: 50px;
+
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #3f2fa3, #5d3ce2);
+  border-radius: 8px;
+
+  transition: background 0.3s ease;
+}
+
+.projects-button:hover {
+  background: linear-gradient(90deg, #5d3ce2, #3f2fa3);
+}
