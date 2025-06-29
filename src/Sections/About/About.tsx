@@ -21,8 +21,26 @@ const About: React.FC = () => {
             projects.
           </p>
           <div className="about-buttons">
-            <button className="hire-button">HIRE ME</button>
-            <button className="resume-button">RESUME</button>
+            <button
+              className="hire-button"
+              onClick={() => {
+                const contactSection = document.getElementById("contact");
+                if (contactSection)
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              HIRE ME
+            </button>
+            <button className="resume-button">
+              {" "}
+              <a
+                href="/resume.pdf"
+                download
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                RESUME
+              </a>
+            </button>
           </div>
         </div>
       </div>

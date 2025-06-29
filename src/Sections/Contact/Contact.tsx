@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaBehance,
-} from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./Contact.css";
 
 const Contact: React.FC = () => {
